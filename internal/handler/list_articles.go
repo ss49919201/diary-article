@@ -16,7 +16,7 @@ type listArticles struct {
 	listArticlesUsecase usecase.ListArticles
 }
 
-func NewListArticle() (ListArticles, error) {
+func NewListArticles() (ListArticles, error) {
 	return listArticles{
 		listArticlesUsecase: dicontainer.MustInvoke[usecase.ListArticles](),
 	}, nil

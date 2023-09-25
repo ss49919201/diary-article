@@ -13,7 +13,7 @@ import (
 
 func main() {
 	dicontainer.Provide(handler.NewHealthCheck)
-	dicontainer.Provide(handler.NewListArticle)
+	dicontainer.Provide(handler.NewListArticles)
 	dicontainer.Provide(usecase.NewListArticles)
 	dicontainer.Provide(queryservice.NewListArticles)
 

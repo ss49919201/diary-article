@@ -1,7 +1,7 @@
-package handler
+package usecase
 
 type {{.InterfaceName}} interface {
-    Do(w http.ResponseWriter, r *http.Request)
+    Do()
 }
 
 type {{.StructName}} struct {
@@ -14,6 +14,6 @@ func New{{.InterfaceName}}() ({{.InterfaceName}}, error) {
 	}, nil
 }
 
-func (_ {{.StructName}}) Do(w http.ResponseWriter, r *http.Request) {
+func (_ {{.StructName}}) Do() {
     // not implemented
 }

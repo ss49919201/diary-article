@@ -1,0 +1,19 @@
+package handler
+
+type {{.InterfaceName}} interface {
+    Do(w http.ResponseWriter, r *http.Request)
+}
+
+type {{.StructName}} struct {
+	// not implemented
+}
+
+func New{{.InterfaceName}}() ({{.InterfaceName}}, error) {
+	return {{.StructName}}{
+		// not implemented
+	}, nil
+}
+
+func (_ {{.StructName}}) Do(w http.ResponseWriter, r *http.Request) {
+    // not implemented
+}

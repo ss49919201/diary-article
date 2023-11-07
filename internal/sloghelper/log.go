@@ -16,3 +16,7 @@ func Fatal(ctx context.Context, msg string, args ...any) {
 func Error(ctx context.Context, msg string, args ...any) {
 	logger.ErrorContext(ctx, msg, args...)
 }
+
+func Info(ctx context.Context, msg string, args ...any) {
+	logger.Log(ctx, slog.Level(slog.LevelInfo), msg, args...)
+}

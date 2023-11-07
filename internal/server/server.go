@@ -1,12 +1,13 @@
 package server
 
 import (
-	"log"
+	"fmt"
 	"time"
 
 	"github.com/gin-gonic/gin"
 	"github.com/ss49919201/diary/internal/dicontainer"
 	"github.com/ss49919201/diary/internal/handler"
+	"github.com/ss49919201/diary/internal/sloghelper"
 )
 
 func Run() error {
@@ -29,5 +30,6 @@ func Run() error {
 func logRequestHandlingElapsedTime(ctx *gin.Context) {
 	start := time.Now()
 	ctx.Next()
-	log.Printf("elapsed: %dns\n", time.Since(start).Nanoseconds())
+	elapsed := fmt.Sprintf("%dns", time.Since(start).Nanoseconds())
+	sloghelper.Info(ctx, "Handled request", "elapsed", elapsed)
 }

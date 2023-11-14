@@ -10,7 +10,6 @@ type UserActivityLabel string
 
 const (
 	UserActivityLabelCreateArticle UserActivityLabel = "create_article"
-	UserActivityLabelCreateUser    UserActivityLabel = "create_user"
 )
 
 func NewFromActivity(a Article) UserActivity {

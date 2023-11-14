@@ -3,9 +3,9 @@ package usecase
 import (
 	"context"
 
-	"github.com/ss49919201/diary/internal/dicontainer"
-	"github.com/ss49919201/diary/internal/domain/entity"
-	"github.com/ss49919201/diary/internal/queryservice"
+	"github.com/ss49919201/diary-article/internal/dicontainer"
+	"github.com/ss49919201/diary-article/internal/domain/entity"
+	"github.com/ss49919201/diary-article/internal/queryservice"
 )
 
 type ListArticles interface {

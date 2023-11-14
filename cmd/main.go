@@ -3,12 +3,12 @@ package main
 import (
 	"context"
 
-	"github.com/ss49919201/diary/internal/dicontainer"
-	"github.com/ss49919201/diary/internal/handler"
-	"github.com/ss49919201/diary/internal/queryservice"
-	"github.com/ss49919201/diary/internal/server"
-	"github.com/ss49919201/diary/internal/sloghelper"
-	"github.com/ss49919201/diary/internal/usecase"
+	"github.com/ss49919201/diary-article/internal/dicontainer"
+	"github.com/ss49919201/diary-article/internal/handler"
+	"github.com/ss49919201/diary-article/internal/queryservice"
+	"github.com/ss49919201/diary-article/internal/server"
+	"github.com/ss49919201/diary-article/internal/sloghelper"
+	"github.com/ss49919201/diary-article/internal/usecase"
 )
 
 func main() {

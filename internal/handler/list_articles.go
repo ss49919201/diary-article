@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/ss49919201/diary/internal/dicontainer"
-	"github.com/ss49919201/diary/internal/usecase"
+	"github.com/ss49919201/diary-article/internal/dicontainer"
+	"github.com/ss49919201/diary-article/internal/usecase"
 )
 
 type ListArticles interface {

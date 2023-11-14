@@ -1,8 +1,8 @@
 package service
 
 import (
-	"github.com/ss49919201/diary/internal/domain/entity"
-	"github.com/ss49919201/diary/internal/domain/repository"
+	"github.com/ss49919201/diary-article/internal/domain/entity"
+	"github.com/ss49919201/diary-article/internal/domain/repository"
 )
 
 type ArticleCreator interface {

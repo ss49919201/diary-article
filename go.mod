@@ -1,4 +1,4 @@
-module github.com/ss49919201/diary
+module github.com/ss49919201/diary-article
 
 go 1.21.0
 

@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/gin-gonic/gin"
-	"github.com/ss49919201/diary/internal/dicontainer"
-	"github.com/ss49919201/diary/internal/handler"
-	"github.com/ss49919201/diary/internal/sloghelper"
+	"github.com/ss49919201/diary-article/internal/dicontainer"
+	"github.com/ss49919201/diary-article/internal/handler"
+	"github.com/ss49919201/diary-article/internal/sloghelper"
 )
 
 func Run() error {

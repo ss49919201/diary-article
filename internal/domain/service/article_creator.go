@@ -22,7 +22,7 @@ type articleCreator struct {
 
 func (a *articleCreator) Exec(in CreateArticleInput) error {
 	article := entity.NewArticle(in.ArticleTitle, in.ArticleBody, in.UserID)
-	if err := a.article.Create(article); err != nil {
+	if err := a.article.Save(article); err != nil {
 		return err
 	}
 

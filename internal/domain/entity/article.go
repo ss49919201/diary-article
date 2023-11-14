@@ -14,3 +14,7 @@ func NewArticle(title, body string, userID int) Article {
 		userID: userID,
 	}
 }
+
+func (a *Article) ID() int {
+	return a.id
+}

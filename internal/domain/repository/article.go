@@ -3,5 +3,5 @@ package repository
 import "github.com/ss49919201/diary-article/internal/domain/entity"
 
 type Article interface {
-	Create(draft entity.Article) error
+	Save(draft entity.Article) error
 }

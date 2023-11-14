@@ -18,3 +18,7 @@ func NewFromActivity(a Article) UserActivity {
 		label:  UserActivityLabelCreateArticle,
 	}
 }
+
+func (u *UserActivity) ID() int {
+	return u.id
+}

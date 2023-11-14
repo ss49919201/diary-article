@@ -27,5 +27,5 @@ func (a *articleCreator) Exec(in CreateArticleInput) error {
 	}
 
 	userActivity := entity.NewFromActivity(article)
-	return a.userActivity.Create(userActivity)
+	return a.userActivity.Save(userActivity)
 }

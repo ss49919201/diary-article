@@ -5,7 +5,7 @@ go 1.21.0
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/samber/do v1.6.0
-	golang.org/x/text v0.13.0
+	golang.org/x/text v0.14.0
 	golang.org/x/tools v0.6.0
 )
 

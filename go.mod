@@ -1,6 +1,6 @@
 module github.com/ss49919201/diary-article
 
-go 1.21.0
+go 1.21.5
 
 require (
 	github.com/gin-gonic/gin v1.9.1
